@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Lyk的小站</title>
+  <title>Rhino渲染原理浅谈 1.UV贴图 | Lyk的小站</title>
   <meta name="author" content="慷慷">
+  
+  <meta name="description" content="写在前面简单来说，UV贴图就是把一张2维图片（材质）包裹到3维模型（建筑）的过程。为了使这个过程正常运作，我们需要进行两个步骤：
+1.对模型UV展开：即将模型的所有面摊平到地面上，并合理放置在一起。2.对展开的UV进行贴图：可以使用Ps等图片处理工具，在正确的位置（模型的某个面）画上正确的贴图。
+我">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Rhino渲染原理浅谈 1.UV贴图"/>
   <meta property="og:site_name" content="Lyk的小站"/>
 
   
@@ -42,8 +46,7 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article id="post-Rhino渲染原理浅谈-1-UV贴图" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-Rhino渲染原理浅谈-1-UV贴图" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
     <header>
@@ -53,7 +56,7 @@
       
       
   
-    <h1 class="title"><a href="/2023/04/20/Rhino%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E6%B5%85%E8%B0%88-1-UV%E8%B4%B4%E5%9B%BE/">Rhino渲染原理浅谈 1.UV贴图</a></h1>
+    <h1 class="p-name title" itemprop="headline name">Rhino渲染原理浅谈 1.UV贴图</h1>
   
 
     </header>
@@ -99,71 +102,11 @@
       
         
         
-      
-      <div class="clearfix"></div>
-    </footer>
+  
+  <div class="tags">
+    <a href="/tags/%E5%BB%BA%E7%AD%91%E5%AD%A6%E7%9B%B8%E5%85%B3/">建筑学相关</a>
   </div>
-</article>
 
-
-
-
-  <article id="post-一些随便拍的植物" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2023-04-08T10:37:23.000Z"><a href="/2023/04/08/%E4%B8%80%E4%BA%9B%E9%9A%8F%E4%BE%BF%E6%8B%8D%E7%9A%84%E6%A4%8D%E7%89%A9/">2023-04-08</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2023/04/08/%E4%B8%80%E4%BA%9B%E9%9A%8F%E4%BE%BF%E6%8B%8D%E7%9A%84%E6%A4%8D%E7%89%A9/">一些随便拍的植物</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>上一篇大沙河的随笔可能不更新了(＞_＜)，最近集中周好忙，过了几天就不知道该写什么…只能让3张图片孤独的留在那里了。（不过至少图片下面还是有描述的嘛！）</p>
-<p>说回正题，其实一直想试试拍一系列相互关联的照片，有点类似于摄影集那样？毕竟咱普通人很难抓到像布列松那样的决定性瞬间.质不行就只好以量取胜,一大堆很像的照片凑在一起总能稍微有点感觉了吧？只要能有种「好像」讲了一个故事的意思对我来说就足够了。</p>
-<p>🍀</p>
-<hr>
-<img src="/images/0408_1.jpg" alt="大学城的停车场 手机拍摄" width="720" height="720" align="middle" />
-
-<p>这张照片我很喜欢！展现了南方茂密的树丛，特别是中间那一棵很高的，我觉得是这张照片的精髓。而且下面的车刚好都是灰白的，停车桩的红色和黄色和树对比很强烈。</p>
-<p>🍀</p>
-<hr>
-<img src="/images/0408_2.jpg" alt="清华附近夕阳下的椰子树 手机拍摄" width="720" height="720" align="middle" />
-
-<p>这一张也很棒。特别是太阳快要下山时候的余晖很漂亮。背景的白墙在太阳的照射下显现出暖橙色。看起来很有热带的感觉。不过这种树听说是不会结椰子的？</p>
-<p>🍀</p>
-<hr>
-<img src="/images/0408_3.jpg" alt="从体育场看主楼 手机拍摄" width="720" height="720" align="middle" />
-
-<p>这是上学期体测的时候拍摄的。刚刚跑完1000米，上气不接下气，一抬头就看见主楼刚好在两丛树的中间，光线也刚刚好，就拍了下来。</p>
-<p>不过…这张照片的主题并不是植物欸，说不定放在这篇里不是很合适。但也蛮好看的，就还是留下啦。</p>
-<p>🍀</p>
-<hr>
-<img src="/images/0408_5.jpg" alt="大沙河河岸 Nikon Z 30" width="720" height="720" align="middle" />
-
-<p>有一天下午没事干，就带上相机去大沙河走了一圈。本意是要走到河边拍流水，但回头的时候看见了这个场景。所有的草都长得很高很绿了，但这棵树还是金黄色的，实在是很巧妙。真是可遇不可求的画面，于是赶快拍了下来。美中不足是天气不好，如果能有阳光斜切到树上就太好了。</p>
-<p>🍀</p>
-<hr>
-<img src="/images/0408_6.jpg" alt="塘朗山绿道 Nikon Z 30" width="720" height="720" align="middle" />
-
-<p>同样也是时间很巧妙的一张照片。夕阳的最后一点点余晖刚好照在山坡的一棵树上。看到这个场景的时候我前面还有铁丝网挡住了，只好狠狠往前跑到没有遮挡的地方，就怕阳光突然消失。</p>
-<p>🍀</p>
-<hr>
-<p>这几张照片都不是最近拍的了。如果各位有幸能去到同样的地方，可以留意一下发生了怎样的变化。其实一直很想对着同一个地方拍很多照片，然后串联起来，但是博主太懒了，而且也没有合适的机会。以后遇到再拍叭~</p>
-<p>这一篇博客也实在拖了太久（笑），最近太忙，一度萌生了想要放弃博客的念头。还好喜欢的人一直催更，这才重新提笔（键盘）写作。大家看到这篇最早应该也是在22&#x2F;4&#x2F;10晚上了，但发布时间是8号…欸，那是我写标题的时间。</p>
-<p>总之，如果能在评论区随便说两句的话我会很开心的。大家晚安。</p>
-<p>☆*: .｡. o(≧▽≦)o .｡.:*☆</p>
-
-      
-    </div>
-    <footer>
-      
-        
         
       
       <div class="clearfix"></div>
@@ -172,88 +115,20 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">留言</h1>
 
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="871d6c2c-a270-4445-b6ea-8e418ce24728"
+  data-page-id="2023/04/20/Rhino渲染原理浅谈-1-UV贴图/"
+  data-page-url="http://example.com/2023/04/20/Rhino%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E6%B5%85%E8%B0%88-1-UV%E8%B4%B4%E5%9B%BE/"
+  data-page-title="Rhino渲染原理浅谈 1.UV贴图"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+</section>
 
-  <article id="post-大沙河散步随笔" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2023-04-04T13:15:57.000Z"><a href="/2023/04/04/%E5%A4%A7%E6%B2%99%E6%B2%B3%E6%95%A3%E6%AD%A5%E9%9A%8F%E7%AC%94/">2023-04-04</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2023/04/04/%E5%A4%A7%E6%B2%99%E6%B2%B3%E6%95%A3%E6%AD%A5%E9%9A%8F%E7%AC%94/">大沙河散步随笔</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>先Post几张图片，明天再写。顺便测试Tag系统和解决Home按钮404问题。<br><img src="/images/0404_1.jpg" alt="一只还不会飞的小鸟" width="360" height="240" align="middle" /></p>
-<img src="/images/0404_2.jpg" alt="咸蛋黄做的夕阳" width="360" height="240" align="middle" />
-
-<img src="/images/0404_3.jpg" alt="从信息楼20层平台看到清华的海洋楼" width="360" height="240" align="middle" />
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-小站的第一篇博客" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2023-04-04T08:40:36.000Z"><a href="/2023/04/04/%E5%B0%8F%E7%AB%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">2023-04-04</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2023/04/04/%E5%B0%8F%E7%AB%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">小站的第一篇博客</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>今天花了半天时间用Hexo在GitHub上搭建了这个小博客。以后可能会发一些日常感想、照片、建筑学相关的内容，还有其他奇奇怪怪不想在社交媒体分享的东西。</p>
-<p>博客支持留言评论，不需要登录或者注册，是「完完全全」的匿名评论，呢！毕竟是比较私密的博客，大概也只有我的好朋友们会看见。所以希望无需注册就能畅所欲言，也是想要大家多多评论~</p>
-<p>因为技术原因目前评论无法及时显示，需要我在后台通过，但是我会尽快处理的啦！只能拜托大家多多稍等一下。</p>
-<p>还不太会用Markdown语言，第一篇博客比较粗糙。那就在这里庆祝开站大吉！耶耶</p>
-<p> ( ゜- ゜)つロ 乾杯~</p>
-<p>放一张图测试利用Markdown访问图片：<br><img src="/images/Sunset.jpg" alt="Kodak Gold 200 在昆明拍摄的夕阳" width="540" height="303" align="middle" /></p>
-<p>PS，要点击文章标题进到文章里才看得到留言区噢。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
