@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Rhino渲染原理浅谈 1.UV贴图 | Lyk的小站</title>
+  <title>Rhino渲染原理浅谈-UV贴图 | Lyk的小站</title>
   <meta name="author" content="慷慷">
   
   <meta name="description" content="写在前面简单来说，UV贴图就是把一张2维图片（材质）包裹到3维模型（建筑）的过程。为了使这个过程正常运作，我们需要进行两个步骤：
@@ -12,7 +12,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Rhino渲染原理浅谈 1.UV贴图"/>
+  <meta property="og:title" content="Rhino渲染原理浅谈-UV贴图"/>
   <meta property="og:site_name" content="Lyk的小站"/>
 
   
@@ -56,7 +56,7 @@
       
       
   
-    <h1 class="p-name title" itemprop="headline name">Rhino渲染原理浅谈 1.UV贴图</h1>
+    <h1 class="p-name title" itemprop="headline name">Rhino渲染原理浅谈-UV贴图</h1>
   
 
     </header>
@@ -81,7 +81,7 @@
 <p>将视窗调整为渲染模式或在右侧UV编辑器中选择「⚪使用材质」，就可以看到结果了。透明、凹凸等通道也可以如法炮制。</p>
 <p>🧱</p>
 <hr>
-<p><strong>一个例子</strong><br>UV贴图常用于拥有复杂表面的物体，如接下来演示的这个案例。<br>使用砖砌筑拱形结构的时候，为了合理的受力，中间一圈靠近圆弧的部分会将砖沿圆心的放射线排列。在路易斯·康的「印度管理学院」中常见这样的结构。本案例将介绍如何使用UV贴图的技巧来进行正确的渲染。<br><img src="/images/UV0.jpg" alt="中央圆拱部分的砖排列方式不同" width="1024" height="1024" align="middle" /></p>
+<p><strong>一个例子</strong><br>UV贴图常用于拥有复杂表面的物体，如接下来演示的这个案例。<br>使用砖砌筑拱形结构的时候，为了合理的受力，中间一圈靠近圆弧的部分会将砖沿圆心的放射线排列。在路易斯·康的「印度管理学院」中常见这样的结构。本案例将介绍如何使用UV贴图的技巧来进行正确的渲染。<br><img src="/images/UV0.png" alt="中央圆拱部分的砖排列方式不同" width="1024" height="1024" align="middle" /></p>
 <p>1.建模：<br>模型相对来说比较简单，就是一个长方体中央穿了一个圆洞。鉴于本文并不是建模教程，就不赘述过程了。不过请确保模型为一个封闭的多重曲面。<br><img src="/images/UV5.jpg" alt="印度管理学院中的砖砌圆拱和Rhino的仿造模型" width="1000" height="500" align="middle" /></p>
 <p>2.UV展开：<br>使用 Unwarp 命令展开模型的UV。接缝的选取如图所示，我选择将中央的圆环单独拆分出来贴图，因为直面和曲面在一起会较难操作。<br>*请选择一条垂直于圆环的边缘以将圆环剪开，这样才能获得平整的结果。若无法选择边缘，可以尝试将整个模型分割成两个部分在重新 Join 在一起，这样可以创造出多余的边缘。<br><img src="/images/UV6.jpg" alt="这样的展开方式会将模型炸开为三块，且圆环 C 被无扭曲的铺平了" width="1000" height="500" align="middle" /></p>
 <p>UV展开后的结果还不错，但还不够好。我们遇到了一个问题：有一个面被旋转了，虽然不是什么大问题，但不方便。<br>当然，我们可以选择这一片UV孤岛，将它转回来就行了。但有没有更好的办法？其实是有的。</p>
@@ -123,7 +123,7 @@
   data-app-id="871d6c2c-a270-4445-b6ea-8e418ce24728"
   data-page-id="2023/04/20/Rhino渲染原理浅谈-1-UV贴图/"
   data-page-url="http://example.com/2023/04/20/Rhino%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86%E6%B5%85%E8%B0%88-1-UV%E8%B4%B4%E5%9B%BE/"
-  data-page-title="Rhino渲染原理浅谈 1.UV贴图"
+  data-page-title="Rhino渲染原理浅谈-UV贴图"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 </section>
